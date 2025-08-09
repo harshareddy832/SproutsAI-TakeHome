@@ -1,0 +1,59 @@
+John Davis
+Full-Stack Software Engineer
+
+Contact Information:
+Email: john.davis.fullstack@email.com
+Phone: (555) 345-6789
+Location: Seattle, WA
+GitHub: github.com/johndavis
+LinkedIn: linkedin.com/in/johndavisfullstack
+
+Professional Summary:
+Versatile Full-Stack Developer with 3 years of experience in web development. Comfortable working with both frontend and backend technologies. Experience with JavaScript, Python, and various frameworks across the technology stack.
+
+Technical Skills:
+- Frontend: JavaScript, HTML5, CSS3, React (basic), jQuery
+- Backend: Python, Node.js, Express.js, Django (basic)
+- Databases: MySQL, PostgreSQL, MongoDB (basic)
+- Cloud: AWS (basic), Heroku, Digital Ocean
+- Tools: Git, VS Code, Postman, Chrome DevTools
+- Other: RESTful APIs, JSON, Ajax, Bootstrap
+
+Professional Experience:
+
+Full-Stack Developer | TechStartup Inc. | 2022 - Present
+- Developed web applications using JavaScript and Python
+- Created responsive frontends with HTML, CSS, and JavaScript
+- Built simple APIs using Express.js and Django
+- Worked with MySQL databases for data storage
+- Deployed applications to cloud platforms
+- Collaborated with small development team in agile environment
+
+Junior Web Developer | Digital Agency | 2021 - 2022
+- Built client websites using HTML, CSS, JavaScript, and WordPress
+- Integrated third-party APIs and services
+- Performed website maintenance and bug fixes
+- Assisted senior developers with larger projects
+- Learned version control and project management tools
+
+Web Development Intern | Local Tech Company | 2020 - 2021
+- Created landing pages and marketing websites
+- Learned JavaScript and modern web development practices
+- Assisted with database updates and content management
+- Participated in team meetings and project planning
+
+Education:
+Bachelor of Science in Information Technology
+University of Washington | 2021
+
+Online Courses:
+- JavaScript Algorithms and Data Structures (freeCodeCamp)
+- Python for Everybody Specialization (Coursera)
+- React Basics (Udemy)
+- AWS Cloud Practitioner (AWS Training)
+
+Projects:
+- Personal Portfolio: Responsive website built with HTML, CSS, and JavaScript
+- Task Manager: Simple web app using Express.js and MySQL
+- Weather App: Frontend application consuming weather API
+- Blog Platform: Basic CMS built with Django and Bootstrap

@@ -1,0 +1,31 @@
+Data Scientist - AI Analytics Company
+
+Join our data science team to build predictive models and extract insights from large datasets. We're looking for a passionate data scientist with strong statistical knowledge and machine learning expertise.
+
+Key Responsibilities:
+- Develop machine learning models for predictive analytics and recommendation systems
+- Analyze large datasets using Python, R, and SQL
+- Create data visualizations and present findings to stakeholders
+- Clean and preprocess data from various sources
+- Deploy ML models to production environments
+- Collaborate with engineering teams to integrate models into applications
+- Research and implement state-of-the-art ML algorithms
+
+Required Qualifications:
+- Master's or PhD in Data Science, Statistics, Mathematics, or related field
+- 3+ years of experience in data science or machine learning
+- Proficiency in Python and key libraries (pandas, numpy, scikit-learn, matplotlib)
+- Strong knowledge of statistics and machine learning algorithms
+- Experience with SQL and database management
+- Knowledge of data visualization tools (Tableau, Power BI, or similar)
+- Experience with Jupyter notebooks and version control
+
+Preferred Qualifications:
+- Experience with deep learning frameworks (TensorFlow, PyTorch)
+- Knowledge of big data technologies (Spark, Hadoop)
+- Cloud platform experience (AWS SageMaker, Google Cloud AI)
+- Experience with A/B testing and experimental design
+- Background in NLP or computer vision
+- Publications or contributions to open-source ML projects
+
+Competitive compensation package with equity options and flexible work arrangements.

@@ -1,0 +1,32 @@
+Frontend Developer - Modern Web Solutions
+
+We are seeking a talented Frontend Developer to create exceptional user experiences for our web applications. The ideal candidate will have expertise in modern JavaScript frameworks and a passion for clean, responsive design.
+
+Key Responsibilities:
+- Develop responsive web applications using React, Vue.js, or Angular
+- Collaborate with UX/UI designers to implement pixel-perfect interfaces
+- Optimize applications for maximum speed and scalability
+- Write clean, maintainable code following best practices
+- Integrate with RESTful APIs and GraphQL endpoints
+- Implement automated testing for frontend components
+- Ensure cross-browser compatibility and accessibility standards
+
+Required Qualifications:
+- Bachelor's degree in Computer Science, Web Development, or related field
+- 3+ years of professional frontend development experience
+- Proficiency in HTML5, CSS3, and modern JavaScript (ES6+)
+- Strong experience with at least one major framework (React, Vue.js, Angular)
+- Experience with CSS preprocessors (Sass, Less) and build tools (Webpack, Vite)
+- Knowledge of version control systems (Git)
+- Understanding of responsive design principles and mobile-first development
+
+Preferred Qualifications:
+- Experience with TypeScript
+- Knowledge of state management libraries (Redux, Vuex, NgRx)
+- Familiarity with CSS-in-JS libraries (styled-components, emotion)
+- Experience with testing frameworks (Jest, Cypress, Testing Library)
+- Understanding of web performance optimization techniques
+- Basic knowledge of backend technologies and databases
+- Experience with design tools (Figma, Sketch, Adobe XD)
+
+Join our team and help shape the future of web user experiences with cutting-edge technology and collaborative environment.

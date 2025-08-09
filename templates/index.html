@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Recommendation Engine</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Candidate Recommendation Engine</h1>
+            <p>Upload job description and resumes to find the best matches</p>
+        </header>
+
+        <!-- AI Configuration Panel -->
+        <section class="ai-config-section" id="aiConfigSection">
+            <div class="config-header" id="configHeader">
+                <span class="config-icon">⚙️</span>
+                <span class="config-title">AI Configuration</span>
+                <span class="config-status" id="configStatus">●</span>
+                <span class="config-toggle" id="configToggle">▼</span>
+            </div>
+            
+            <div class="config-panel" id="configPanel" style="display: none;">
+                <form id="aiConfigForm">
+                    <div class="config-row">
+                        <div class="config-group">
+                            <label for="aiProvider">AI Provider</label>
+                            <select id="aiProvider" name="provider" required>
+                                <option value="">Select Provider</option>
+                                <option value="openai">OpenAI (GPT-3.5 Turbo)</option>
+                                <option value="anthropic">Anthropic (Claude-3 Haiku)</option>
+                                <option value="google">Google AI (Gemini Pro)</option>
+                                <option value="groq">Groq (Llama3-8B)</option>
+                                <option value="ollama">Local/Ollama (Llama2)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="config-row two-columns">
+                        <div class="config-group">
+                            <label for="apiKey">API Key</label>
+                            <div class="api-key-input">
+                                <input type="password" id="apiKey" name="api_key" placeholder="Enter your API key" required>
+                                <button type="button" id="toggleApiKey" class="toggle-btn">👁️</button>
+                            </div>
+                        </div>
+                        
+                        <div class="config-group">
+                            <label for="customEndpoint">Custom Endpoint (Optional)</label>
+                            <input type="url" id="customEndpoint" name="custom_endpoint" placeholder="https://api.custom.com/v1">
+                        </div>
+                    </div>
+                    
+                    <div class="config-actions">
+                        <button type="button" id="testConnection" class="test-btn">Test Connection</button>
+                        <button type="submit" id="saveConfig" class="save-btn">Save Configuration</button>
+                    </div>
+                    
+                    <div id="configMessage" class="config-message" style="display: none;"></div>
+                    
+                    <div class="config-help">
+                        <p><strong>💡 Simplified Setup - Just pick a provider and enter your API key!</strong></p>
+                        <ul>
+                            <li><strong>Groq (Free):</strong> Get free API key at <a href="https://console.groq.com" target="_blank">console.groq.com</a></li>
+                            <li><strong>OpenAI:</strong> API key from <a href="https://platform.openai.com" target="_blank">platform.openai.com</a></li>
+                            <li><strong>Anthropic:</strong> API key from <a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a></li>
+                            <li><strong>Local/Ollama:</strong> Install from <a href="https://ollama.ai" target="_blank">ollama.ai</a>, run 'ollama serve'</li>
+                        </ul>
+                        <p><small>Models are automatically selected for optimal performance.</small></p>
+                        <p><small><strong>⚠️ Rate Limits:</strong> Don't test too quickly! Most providers limit free usage. Try Groq for generous free limits.</small></p>
+                        <p><small>Having issues? Check the <strong>AI_TROUBLESHOOTING_GUIDE.md</strong> file.</small></p>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <main>
+            <!-- Input Section -->
+            <section class="input-section">
+                <form id="recommendationForm" enctype="multipart/form-data">
+                    <!-- Job Description -->
+                    <div class="form-group">
+                        <label for="jobDescription">Job Description</label>
+                        <textarea 
+                            id="jobDescription" 
+                            name="job_description" 
+                            rows="8" 
+                            placeholder="Paste the job description here..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- File Upload -->
+                    <div class="form-group">
+                        <label for="resumeFiles">Upload Resume Files</label>
+                        <div class="upload-area" id="uploadArea">
+                            <input 
+                                type="file" 
+                                id="resumeFiles" 
+                                name="files" 
+                                multiple 
+                                accept=".pdf,.docx,.txt"
+                                required
+                            >
+                            <div class="upload-text">
+                                <div class="upload-icon">📄</div>
+                                <p>Drop resume files here or click to browse</p>
+                                <small>Supports PDF, DOCX, and TXT files</small>
+                            </div>
+                        </div>
+                        <div id="fileList" class="file-list"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submitBtn" class="submit-btn">
+                        <span class="btn-text">Find Best Candidates</span>
+                        <div class="loading-spinner" id="loadingSpinner"></div>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section" id="resultsSection" style="display: none;">
+                <div class="results-header">
+                    <h2>Candidate Rankings</h2>
+                    <button type="button" id="generateAIBtn" class="ai-insights-btn" style="display: none;">
+                        <span class="ai-btn-text">🤖 Generate AI Insights</span>
+                        <div class="ai-loading-spinner" id="aiLoadingSpinner"></div>
+                    </button>
+                </div>
+                <div id="processingInfo" class="processing-info"></div>
+                <div id="aiInsightsInfo" class="ai-insights-info" style="display: none;"></div>
+                <div id="candidateResults" class="candidate-results"></div>
+            </section>
+
+            <!-- Error Section -->
+            <section class="error-section" id="errorSection" style="display: none;">
+                <div class="error-message">
+                    <h3>Error</h3>
+                    <p id="errorText"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

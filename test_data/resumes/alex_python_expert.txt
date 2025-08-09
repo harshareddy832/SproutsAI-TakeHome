@@ -1,0 +1,57 @@
+Alex Rodriguez
+Senior Python Developer
+
+Contact Information:
+Email: alex.rodriguez@email.com
+Phone: (555) 987-6543
+Location: San Francisco, CA
+LinkedIn: linkedin.com/in/alexrodriguezdev
+
+Professional Summary:
+Experienced Senior Python Developer with 6 years of expertise in building scalable web applications and APIs. Proven track record in FastAPI, Django, and cloud deployment. Strong background in mentoring teams and implementing CI/CD pipelines.
+
+Technical Skills:
+- Programming Languages: Python (Expert), JavaScript, SQL, Bash
+- Web Frameworks: FastAPI, Django, Flask, Django REST Framework
+- Databases: PostgreSQL, MongoDB, Redis, MySQL
+- Cloud & DevOps: AWS (EC2, RDS, S3, Lambda), Docker, Kubernetes, CI/CD
+- ML Libraries: scikit-learn, pandas, numpy, matplotlib
+- Tools: Git, Jenkins, Terraform, Nginx
+
+Professional Experience:
+
+Senior Python Developer | TechInnovate Inc. | 2021 - Present
+- Led development of microservices architecture using FastAPI and Docker
+- Built and maintained RESTful APIs serving 100K+ requests per day
+- Optimized PostgreSQL queries resulting in 60% performance improvement
+- Mentored 3 junior developers and conducted comprehensive code reviews
+- Implemented automated testing with 95% code coverage using pytest
+- Deployed applications on AWS using Docker containers and Kubernetes
+
+Python Developer | WebSolutions Corp | 2019 - 2021
+- Developed web applications using Django and Django REST Framework
+- Integrated third-party APIs and payment processing systems
+- Built data processing pipelines using pandas and numpy
+- Collaborated with frontend team using React integration
+- Implemented CI/CD pipelines using Jenkins and GitHub Actions
+- Worked in agile environment with cross-functional teams
+
+Junior Python Developer | StartupTech | 2018 - 2019
+- Contributed to e-commerce platform development using Flask
+- Created automated scripts for data migration and processing
+- Assisted in database design and optimization
+- Participated in agile development cycles and daily standups
+
+Education:
+Bachelor of Science in Computer Science
+University of California, Berkeley | 2018
+
+Certifications:
+- AWS Certified Developer Associate (2022)
+- Python Institute Certified Python Programmer (PCPP-1)
+- Docker Certified Associate
+
+Projects:
+- E-commerce API: FastAPI-based microservice handling payments and inventory
+- ML Recommendation System: scikit-learn model for product recommendations
+- DevOps Pipeline: Automated deployment system using Docker and AWS
